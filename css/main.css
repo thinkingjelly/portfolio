@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+/*mainCon01*/
+.mainCon01{background:url(../images/mainBg01.png) no-repeat center center;}
+.con01TxtWrap{
+    position:absolute;
+    top:150px;
+    left:250px;
+    overflow:hidden;
+}
+.con01TxtWrap p{
+    font-family:'SCDream';
+    font-weight:900;
+    font-size:80px;
+    color:#008f43;
+    line-height:100px;
+    /*text-transform: uppercase;*//*typing animation*/
+}
+.con01TxtWrap .lastTxt{
+    font-weight:800;
+    color:#fff;
+    text-shadow:-1px 0 #008f43,
+	       0 1px #008f43,
+	       1px 0 #008f43,
+	       0 -1px #008f43;
+}
+
+/*typing animation
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}*/
+.skillWrap{
+    width:84%;
+    margin-left:250px;
+    margin-top:700px;
+}
+.skillWrap .skill{margin-bottom:10px;}
+.skillWrap .skill .skillTit{
+   color:#008f43;
+   font-family:'SCDream';
+   font-weight:900;
+   font-size:20px;
+}
+.skillWrap .skill .skillBar{
+   width:0;
+   height:10px;
+   background:#f0f0f0;
+   transition:1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition:1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition:1s cubic-bezier(1, 0, .5, 1);
+}
+
+.active .skill .skillBar{width:100%;}
+
+.skillWrap .skill .skillBar span{
+   float:left;
+   width:0%;
+   background:#008f43;
+   height:10px;
+   position:relative;
+   transition:1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition:1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition:1s cubic-bezier(1, 0, .5, 1);
+}
+.skillWrap .skill .skillBar span b{
+   float:left;
+   width:100%;
+   position:relative;
+   text-align:right;
+   opacity:0;
+   font-family:'SCDream';
+   font-weight:200;
+   font-size:16px;
+   color:#008f43;
+   top:-16px;
+}
+
+
+/*mainCon02*/
+.mainCon02{
+    background:url(../images/mainBg02.png) no-repeat center center;
+    text-align:center;
+    font-family:'SCDream';
+}
+.bgTxt{
+    position:absolute;
+    bottom:150px;
+    left:0;
+    font-size:100px;
+    line-height:120px;
+    font-weight:900;
+    color:rgba(0,0,0,0.2);
+    text-align:left;
+}
+.con02TxtWrap{
+    display:inline-block;
+    text-align:left;
+    margin-left:700px;
+}
+.con02TxtWrap>div{
+    width:380px;
+    font-weight:400;
+    margin-top:80px;
+}
+.con02TxtWrap>div:last-child{margin:30px 0 50px;}
+.con02TxtWrap>div h2{
+    font-weight:900;
+    font-size:30px;
+    margin-bottom:20px;
+}
+.myInfo>div{
+    float:left;
+    line-height:30px;
+    margin-right:30px;
+}
+.myInfo>div span{display:block;}
+.infoBox{
+    font-weight:900;
+    font-size:20px;
+}
+.iconWrap img{
+    display:block;
+    float:left;
+    margin-right:15px;
+    transition:transform 0.3s;
+}
+.iconWrap img:hover{transform:translate(0,-15px);}
+
+/*mainCon03*/
+.mainCon03{
+    background:url(../images/mainBg03.png) no-repeat center center;
+    background-size:cover;
+    text-align:center;
+    font-family:'SCDream';
+}
+.brandInfo{
+    width:900px;
+    display:inline-block;
+    text-align:left;
+}
+.brandInfo li{float:left;}
+.brandInfo li img{
+    display:block;
+    margin-right:100px;
+}
+.brandInfo .brandTxt>div{width:396px;}
+.brandInfo .brandTxt>div:last-child{margin-top:100px;}
+.brandInfo .brandTxt>div h2{
+    font-weight:900;
+    font-size:30px;
+    vertical-align:middle;
+    margin-bottom:30px;
+}
+.brandInfo .brandTxt>div h2::before{
+    content:"";
+    display:inline-block;
+    background:#008f43;
+    width:5px;
+    height:28px;
+    margin-right:20px;
+    vertical-align:middle;
+}
+.brandInfo .brandTxt>div .green{color:#008f43;}
+.brandInfo .brandTxt>div span{
+    font-weight:400;
+    font-size:16px;
+}
+.bgImgList{
+    position:absolute;
+    left:100px;
+    bottom:80px;
+}
+.bgImgList li{
+    float:left;
+    margin-right:50px;
+    text-indent:-9999px;
+    width:150px;
+    height:143px;
+    background:url(../images/main03Gray01.png) no-repeat center center;
+    background-size:cover;
+    transition:transform 0.3s;
+}
+.bgImgList li:last-child{margin-right:0;}
+.bgImgList .bgGray02{background-image:url(../images/main03Gray02.png);}
+.bgImgList .bgGray03{background-image:url(../images/main03Gray03.png);}
+.bgImgList .bgGray04{background-image:url(../images/main03Gray04.png);}
+.bgImgList .bgGray05{background-image:url(../images/main03Gray05.png);}
+
+.bgImgList li:hover{transform:translate(0,-30px);}
+
+/*mainCon04*/
+.mainCon04{
+    background:url(../images/mainBg04.png) no-repeat center center;
+    background-size:cover;
+    font-family:'SCDream';
+    color:#fff;
+    text-align:center;
+}
+.mainCon04 a{color:#fff;}
+
+.con04TxtList{
+    width:400px;
+    height:250px;
+    overflow:hidden;
+    text-align:left;
+    position:relative;
+    left:50%;
+    margin-left:-500px;
+    top:80px;
+}
+.con04TxtList li{
+    width:400px;
+    height:250px;
+    word-break:keep-all;
+    float:left;
+    outline:none;
+}
+.con04TxtList li h2{
+    font-weight:900;
+    font-size:30px;
+    margin-bottom:30px;
+}
+.viewBtn{
+    position:absolute;
+    bottom:0;
+    font-weight:700;
+}
+
+.con04ImgList{
+    width:1000px;
+    height:445px;
+    overflow:hidden;
+    position:absolute;
+    left:45%;
+}
+.con04ImgList li{
+    float:left;
+    outline:none;
+    margin-right:50px;
+}
+.con04ImgList li img{display:block;}
+
+.arrowWrap{
+    position:absolute;
+    left:50%;
+    margin-left:-300px;
+    bottom:330px;
+}
+.arrowWrap>div{
+    width:70px;
+    height:70px;
+    float:left;
+    background:url(../images/arrowL.png) no-repeat center center;
+    text-indent:-9999px;
+    cursor:pointer;
+}
+.arrowWrap .nextArrow{
+    background:url(../images/arrowR.png) no-repeat center center;
+    margin-left:15px;
+}
+
+/*mainCon04 hover*/
+.viewBtn a::after{
+    content:"";
+    display:block;
+    width:0;
+    height:5px;
+    background:#fff;
+    margin-top:5px;
+    transition:width 0.3s;
+}
+.viewBtn a:hover::after{width:100%;}

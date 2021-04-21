@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*header*/
+#header{
+    width:100%;
+    height:150px;
+    position:fixed;
+    padding:32px 50px;
+    box-sizing:border-box;
+    z-index:100;
+}
+#header h1 a{
+    width:75px;
+    height:86px;
+    background:url(../images/common/logoGreen.png);
+    display:block;
+    text-indent:-9999px;
+}
+#header h1 .white{background:url(../images/common/logoWhite.png);}
+#header p,.gnb li a{
+    font-family:'SCDream';
+    font-weight:900;
+    color:#008f43;
+    font-size:20px;
+}
+#header p.white{color:#fff;}
+#header p{
+    width:300px;
+    position:fixed;
+    left:-70px;
+    top:300px;
+    transform:rotate(90deg);
+}
+.gnb{
+    position:fixed;
+    top:32px;
+    right:0;
+}
+.gnb li{
+    float:left;
+    margin-right:100px;
+}
+.gnb li::after{
+    content:"";
+    display:block;
+    width:0;
+    height:5px;
+    background:#008f43;
+    margin-top:5px;
+    transition:width 0.3s;
+}
+/*header hover*/
+.gnb li:hover::after{
+    width:100%;
+}
+/*footer*/
+.fp-auto-height{
+    background:#000;
+    padding:80px 0;
+    text-align:center;
+    font-family:'SCDream';
+    font-weight:900;
+    font-size:20px;
+    color:#666;
+}
+
+/*tooltip*/
+div#fp-nav ul li .fp-tooltip{
+    font-family:'SCDream';
+    font-weight:300;
+    color:#008f43;
+}
