@@ -231,21 +231,28 @@ span {
     position:absolute;
     bottom:0;
     font-weight:700;
+    outline:none;
 }
+.viewBtn a{outline:none;}
 
 .con04ImgList{
     width:1000px;
-    height:445px;
+    height:470px;
     overflow:hidden;
     position:absolute;
     left:45%;
 }
 .con04ImgList li{
+    width:859px;
+    height:470px;
     float:left;
     outline:none;
     margin-right:50px;
 }
-.con04ImgList li img{display:block;}
+.con04ImgList li img{
+    display:block;
+    box-shadow: 5px 9px 20px 0px rgba(0, 0, 0, 0.15);
+}
 
 .arrowWrap{
     position:absolute;
